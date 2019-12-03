@@ -15,10 +15,8 @@ class Triangle
       :equilateral
     elsif isosceles
       :isosceles
-    elsif scalene
-      :scalene
     else
-
+      :scalene
     end
   end
 
@@ -28,10 +26,6 @@ class Triangle
 
   def isosceles
     @side1 == @side2 || @side1 == @side3 || @side2 == @side3
-  end
-
-  def scalene
-    @side1 && @side2 != @side3 && @side3 && @side1 != @side2
   end
 
   def zero_check
